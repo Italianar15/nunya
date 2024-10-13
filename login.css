@@ -1,4 +1,47 @@
-
+/* Set the background color of the page to black */
 body {
     background-color: black;
+}
+
+/* Ensure text is readable on the black background */
+.view-container {
+    color: white; /* Makes text white on black background */
+}
+
+/* Example additional styles for the form */
+form.prompt {
+    border: 1px solid white;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for form */
+    border-radius: 10px;
+}
+
+/* Style buttons */
+button.primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.primary:hover {
+    background-color: #0056b3;
+}
+
+/* Style for hidden iframe (FortiClient) */
+iframe#launch-forticlient-iframe {
+    display: none;
+}
+
+/* Optional: style the wide inputs if needed */
+.wide-inputs {
+    margin-bottom: 20px;
+}
+
+/* Example styling for the title */
+.sslvpn-title img {
+    max-width: 100%;
 }
