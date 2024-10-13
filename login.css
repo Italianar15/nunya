@@ -1,19 +1,46 @@
-/* Set the background color of the page to black */
+/* Set the background color of the entire page to black */
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
 }
 
-/* Ensure text is readable on the black background */
+/* Style the view container */
 .view-container {
-    color: white; /* Makes text white on black background */
+    text-align: center;
+    color: white; /* Makes the text white for readability */
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency for the form background */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-/* Example additional styles for the form */
+/* Style for the form itself */
 form.prompt {
-    border: 1px solid white;
+    display: inline-block;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white background for form */
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background for the form */
     border-radius: 10px;
+    color: white;
+}
+
+/* Center the SSL VPN title and the flag image */
+.sslvpn-title img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style the inputs and make them more readable */
+.wide-inputs input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
 
 /* Style buttons */
@@ -31,17 +58,7 @@ button.primary:hover {
     background-color: #0056b3;
 }
 
-/* Style for hidden iframe (FortiClient) */
-iframe#launch-forticlient-iframe {
+/* Hide iframe and skip button by default */
+iframe#launch-forticlient-iframe, #skip_button {
     display: none;
-}
-
-/* Optional: style the wide inputs if needed */
-.wide-inputs {
-    margin-bottom: 20px;
-}
-
-/* Example styling for the title */
-.sslvpn-title img {
-    max-width: 100%;
 }
